@@ -1,0 +1,5 @@
+{
+  "name": "Sum Strike: Math Puzzle",
+  "description": "A fast-paced math puzzle game where you select numbers to reach a target sum and prevent the blocks from reaching the top.",
+  "requestFramePermissions": []
+}

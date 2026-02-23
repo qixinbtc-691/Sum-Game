@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Outfit:wght@600;800&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Outfit", sans-serif;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 font-sans;
+}
+
+@keyframes pulse-target {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.animate-pulse-target {
+  animation: pulse-target 2s infinite ease-in-out;
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl shadow-sm;
+}
+
+.game-block {
+  @apply bg-white text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-slate-50 transition-all;
+}
+
+.game-block-selected {
+  @apply bg-indigo-600 text-white border-indigo-600 shadow-lg shadow-indigo-200 z-10 scale-105;
+}
